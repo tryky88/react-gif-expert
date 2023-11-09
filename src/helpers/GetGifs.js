@@ -2,7 +2,7 @@ const limit = 10;
 
 export const getGifs = async (category) => {
 
-    const url = `http://api.giphy.com/v1/gifs/search?api_key=FJlIHNO0pnNQ5jL7lTe2SlgUyNhS8RG1&q=${category}&limit=${limit}`;
+    const url = `https://api.giphy.com/v1/gifs/search?api_key=FJlIHNO0pnNQ5jL7lTe2SlgUyNhS8RG1&q=${category}&limit=${limit}`;
     const respuesta = await fetch( url);
     const { data } = await respuesta.json();
     console.log(data);
